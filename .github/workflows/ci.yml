@@ -1,10 +1,11 @@
 name: CI
 
-on:
-- push
-- pull_request
-- workflow_dispatch
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+# - push
+# - pull_request
+# - workflow_dispatch
+# 
 jobs:
   ruby-versions:
     uses: ruby/actions/.github/workflows/ruby_versions.yml@master
